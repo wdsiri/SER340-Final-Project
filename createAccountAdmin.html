@@ -14,12 +14,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
     crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="splash.css">
-        <link rel="stylesheet" href="background.css">
-    <title>Student Home Page</title>
+    <link rel="stylesheet" href="background.css">
+    <title>Create Account Admin</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark" id="adminNav">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,21 +26,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="splash.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="courses.html">Courses</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Assignments
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="assignment.html">SER 340 Final Assignment</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="grades.html">Grades</a>
+                <a class="nav-link active text-light" aria-current="page" href="createAccount.html">Home</a>
               </li>
             </ul>
             <div class="d-flex">
@@ -50,7 +35,19 @@
           </div>
         </div>
       </nav>
-
-    <h3>Student Home</h3>
+      <h3 style="margin: 20px;">Create Student Account</h1>
+        <div class="container">
+            <div class="row">
+                <h6>Student Username:</h6>
+                <input type="text" class="col-3 pads" style="margin-left: 10px;">
+            </div>
+            <div class="row">
+                <h6>Student Password:</h6>
+                <input type="text" class="col-3 pads" style="margin-left: 10px;">
+            </div>
+            <div>
+                <button class="btn btn-primary" style="margin-top: 10px;">Create Account</button>
+            </div>
+        </div>
 </body>
 </html>
